@@ -1,0 +1,99 @@
+/* Basic Reset or Normalize (Optional but Recommended) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif; /* Choose a font */
+    line-height: 1.6;
+    color: #333; /* Default text color */
+    background-color: #f4f4f4; /* Light background */
+}
+
+.container {
+    width: 80%; /* Or a fixed width */
+    margin: auto; /* Center the container */
+    overflow: hidden; /* Clear floats if used */
+    padding: 20px 0; /* Add some vertical padding */
+}
+
+header {
+    background: #333; /* Dark background for header */
+    color: #fff; /* White text */
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #0779e4 3px solid; /* Accent color */
+}
+
+header h1 {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+header nav ul {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+header nav ul li {
+    display: inline; /* Make list items horizontal */
+    padding: 0 20px 0 20px;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none; /* Remove underline from links */
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header nav a:hover {
+    color: #0779e4; /* Change color on hover */
+}
+
+section {
+    padding: 20px 0;
+    border-bottom: #ccc 1px solid; /* Separator between sections */
+}
+
+#about h2, #projects h2, #skills h2, #contact h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Add more specific styles for project items, skills list, etc. */
+.project-item {
+    background: #fff;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    color: #fff;
+    background-color: #333;
+}
+
+/* Basic responsiveness (adjust as needed) */
+@media(max-width: 600px){
+    .container {
+        width: 95%;
+    }
+
+    header h1 {
+        text-align: center;
+    }
+
+    header nav ul li {
+        display: block; /* Stack navigation items on small screens */
+        margin-bottom: 5px;
+    }
+}
